@@ -234,5 +234,5 @@ Downside RMS averages squared negative returns over ALL bars (zero for nonnegati
 Inspect cost sensitivity and regime tables before interpreting aggregate returns. Even positive results here do not establish statistical evidence of an edge.
 For educational and research purposes. Historical performance does not imply future results.
 """
-    (out/"quant_report.md").write_text(report)
+    (out/"quant_report.md").write_text(report, encoding="utf-8")
     return {"metrics":metrics_table,"risk":risk_table,"regimes":regime_table,"selection":selection,"results":results}
